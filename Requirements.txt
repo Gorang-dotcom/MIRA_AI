@@ -1,0 +1,2 @@
+streamlit==1.41.1
+mira_sdk==0.1.15
