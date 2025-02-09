@@ -3,7 +3,8 @@ from mira_sdk import MiraClient, Flow
 
 def generate_essay(topic, length):
     # Initialize the client
-    client = MiraClient(config={"API_KEY": "sb-c443375fc15f5b0a9f5183f967912597"})
+    api = st.secrets["API_KEY"]
+    client = MiraClient(config={"API_KEY": api})
     
     # Prepare input data
     input_data = {
